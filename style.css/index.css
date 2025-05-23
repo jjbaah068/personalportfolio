@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 nav {
     background-color: transparent;
@@ -74,35 +78,44 @@ nav a:hover{
 }
 
 .bio-section {
-    padding: 80px 0 0 50px;
+    padding: 50px 20px;
     background-color: white;
     display: flex;
     justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .bio-content {
     display: flex;
-    align-items: center;
-    max-width: 1100px;
+    /* align-items: center; */
+    max-width: 1000px;
+    margin: auto;
     gap: 40px;
     padding: 20px;
+    /* flex-wrap: wrap; */
 }
 
 
 .bio-image {
-    width: 350px;
+    /* width: 350px;*/
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
     height: auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 
 .bio-text {
-    max-width: 500px;
+    flex: 1;
+    min-width: 280px;
+    /* max-width: 500px; */
 }
 
 .bio-text h2 {
-    font-size: 3rem;
-    font-family: sans-serif;
+    font-size: 36px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 20px;
     /* margin-top: 50px; */
 }
 
@@ -110,4 +123,54 @@ nav a:hover{
     font-size: 16px;
     line-height: 1.6;
     color: #93AFD2;
+    margin-bottom: 40px;
 }
+
+.skills {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+}
+
+.skill {
+    margin-bottom: 15px;
+}
+
+.skill span {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.bar {
+    background: #eee;
+    height: 13px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+}
+
+.fill {
+    height: 13px;
+    background: #4caf50;
+    border-radius: 4px;
+    /* position: relative; */
+    /* width: 0; */
+    /* transition: width 0.5s ease-in-out; */
+}
+
+
+/* .tooltip {
+    position: absolute;
+    top: -25px;
+    right: 0;
+    background: #8ebf64;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+    transform: translateX(-50%);
+} */
