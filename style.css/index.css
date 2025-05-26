@@ -72,6 +72,7 @@ nav a:hover{
 .hero-content h1 {
     color: white;
     font-size: 30px;
+    font-weight: bold;
     line-height: 1;
     font-family: 'Courier New', Courier, monospace;
 
@@ -87,36 +88,31 @@ nav a:hover{
 
 .bio-content {
     display: flex;
-    /* align-items: center; */
     max-width: 1000px;
     margin: auto;
     gap: 40px;
     padding: 20px;
-    /* flex-wrap: wrap; */
 }
 
 
 .bio-image {
-    /* width: 350px;*/
     width: 100%;
     max-width: 400px;
     border-radius: 10px;
     height: auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    /* object-fit: cover; */
 }
 
 .bio-text {
     flex: 1;
     min-width: 280px;
-    /* max-width: 500px; */
 }
 
 .bio-text h2 {
     font-size: 36px;
     font-family: 'Courier New', Courier, monospace;
     margin-bottom: 20px;
-    /* margin-top: 50px; */
+    font-weight: bold;
 }
 
 .bio-text p {
@@ -155,26 +151,9 @@ nav a:hover{
     height: 13px;
     background: #4caf50;
     border-radius: 4px;
-    /* position: relative; */
-    /* width: 0; */
-    /* transition: width 0.5s ease-in-out; */
 }
 
-
-/* .tooltip {
-    position: absolute;
-    top: -25px;
-    right: 0;
-    background: #8ebf64;
-    color: white;
-    font-size: 12px;
-    padding: 2px 6px;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    white-space: nowrap;
-    transform: translateX(-50%);
-} */
-
+    
 .services {
     text-align: center;
     padding: 40px;
@@ -183,13 +162,14 @@ nav a:hover{
 
 .services h2 {
     margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 30px;
 }
 
 .service-container {
     display: flex;
     justify-content: center;
     gap: 20px;
-    /* flex-wrap: wrap; */
 }
 
 .service-text {
@@ -198,7 +178,6 @@ nav a:hover{
     padding: 30px 20px;
     width: 250px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-    /* transition: transform 0.3s, box-shadow 0.3s; */
 }
 
 .service-text:hover {
@@ -223,7 +202,7 @@ nav a:hover{
 }
 
 .resume-section {
-    padding: 40px;
+    padding: 60px;
 }
 
 .resume-container {
@@ -240,5 +219,103 @@ nav a:hover{
     height: auto;
     border-radius: 8px;
     object-fit: cover;
-    
+}
+
+.resume-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.resume-text h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.resume-text h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: lighter;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.work-experience {
+    background: #f9f9f9;
+    border-left: 4px solid #8BC34A;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    border-radius: 6px;
+}
+
+.work-experience h3 {
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.work-experience p {
+    margin: 5px 0;
+    color: #555;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.badge {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    margin-top: 8px;
+}
+
+.apprenticeship {
+    background-color: #c8e6c9;
+    color: #2e7d32;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.full-time {
+    background-color: #ffe082;
+    color: #ef6c00;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.date {
+    display: block;
+    font-size: 13px;
+    color: #999;
+    margin-top: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.button-group {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    color: white;
+}
+
+.hire-me {
+    background-color: #a8cf8c;
+}
+
+.download-cv {
+    background-color: #607d8b;
+}
+
+.btn:hover {
+    transform: scale(1.05);
 }
