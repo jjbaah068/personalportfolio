@@ -11,3 +11,16 @@ document.addEventListener('scroll', function() {
         navElement.style.backgroundColor = 'transparent';
     }
 });
+
+
+// Get the hamburger button element by its ID
+const toggleBtn = document.getElementById('menu-toggle');
+// Get the navigation menu element by its ID
+const menu = document.getElementById('menu');
+// Add a click event Listener to the hamburger button
+toggleBtn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+})
+
+
+

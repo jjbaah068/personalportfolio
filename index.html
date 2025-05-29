@@ -7,6 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="./scripts/index.js" defer></script>
   <title>Personal Portfolio</title>
+  <link rel="shortcut icon" href="./images/image17.png" type="favicon">
   <!-- <link rel="stylesheet" href="./style.css/index.css"> -->
 </head>
 
@@ -14,8 +15,16 @@
 
   <nav id="navbar" class="fixed top-0 left-0 w-full z-50 p- transition-colors duration-300 w-full">
     <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
-      <h4 class="text-gray-800 text-white text-xl font-bold">James J Baah</h4>
-      <ul class="text-gray-700 text-white flex space-x-4 text-sm  font-semibold justify-center">
+      <h4 class="text-gray-800 text-white text-xl font-bold">JJB</h4>
+
+      <button id="menu-toggle" class="lg:hidden text-white focus:outline-none">
+      <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+      <ul id="menu" class="hidden lg:flex flex-col lg:flex-row absolute lg:static top-[72px] left-0 w-full lg:w-auto bg-gray-900 lg:bg-transparent px-6 py-4 lg:p-0 space-y-4 lg:space-y-0 lg:space-x-4 text-white text-sm font-semibold shadow-lg lg:shadow-none">
         <li><a href="#home" class="hover:text-blue-300">Home</a></li>
         <li><a href="#about" class="hover:text-blue-300">About</a></li>
         <li><a href="#services" class="hover:text-blue-300">Services</a></li>
@@ -136,9 +145,9 @@
         </div>
 
         <div class="mt-6 flex gap-4 flex-wrap">
-          <a href="mailto:jjbaah068@gmail.com" target="_blank" class="bg-green-300 text-white px-6 py-2 rounded-full font-semibold hover:bg-green-400 transition">Hire
+          <a href="mailto:jjbaah068@gmail.com" class="bg-green-300 text-white px-6 py-2 rounded-full font-semibold hover:bg-green-400 transition">Hire
             Me</a>
-          <a href="#"
+          <a href="./Resume- JJB.pdf" target="_blank" download
             class="bg-gray-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-gray-700 transition">Download
             CV</a>
         </div>
@@ -149,17 +158,17 @@
 
 <section id="projects" class="bg-gray-100 py-12 px-4 pb-18 px-6 mt-20 text-center">
   <h2 class="text-3xl font-bold mb-10">Projects</h2>
-  <div class="flex flex-wrap justify-center space-x-[60px]">
+  <div class="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center">
 
     <div class="border rounded-lg p-6 w-80 h-80 shadow-md hover:shadow-lg">
 
-      <img src="./images/image6.jpg" alt="Project Screenshot" class="rounded-xl mb-4">
+      <img src="./images/image6.jpg" alt="Project Screenshot" class="rounded-xl mb-4 w-full object-cover">
 
       <div class="mb-2 flex gap-4 justify-center">
         <a href="https://github.com/jjbaah068/cisternsofhisglorym" target="_blank"
           class="text-blue-600 hover:underline text-sm">GitHub</a>
         <a href="https://mydemotestrun.vercel.app/" target="_blank"
-          class="text-blue-600 hover:underline text-sm">LiveDemo</a>
+          class="text-blue-600 hover:underline text-sm">Vercel Link</a>
       </div>
 
       <h3 class="text-xl font-semibold mb-2 text-gray-900">Cisterns of His Glory Project</h3>
@@ -171,13 +180,13 @@
 
     <div class="border rounded-lg p-6 w-80 h-80 shadow-md hover:shadow-lg">
 
-      <img src="./images/image10.jpg" alt="Project Screenshot1" class="rounded-xl mb-4">
+      <img src="./images/image10.jpg" alt="Project Screenshot2" class="rounded-xl mb-4 w-full object-cover">
 
       <div class="mb-2 flex gap-4 justify-center">
         <a href="https://github.com/jjbaah068/landing_page" target="_blank"
           class="text-blue-600 hover:underline text-sm">GitHub</a>
         <a href="https://landing-page-olive-nine-77.vercel.app/" target="_blank"
-          class="text-blue-600 hover:underline text-sm">LiveDemo</a>
+          class="text-blue-600 hover:underline text-sm">Vercel Link</a>
       </div>
 
       <h3 class="text-xl font-semibold mb-2 text-gray-900">Landing Page Project</h3>
@@ -185,6 +194,24 @@
       <span class="bg-[#007B2F] px-2 py-1 rounded hover:text-white">HTML</span>
       <span class="bg-green-500 px-2 py-1 rounded hover:text-white">CSS</span>
     </div>
+
+     <div class="border rounded-lg p-6 w-80 h-80 shadow-md hover:shadow-lg">
+
+      <img src="./images/image16.jpg" alt="Project Screenshot3" class="rounded-xl w-full object-cover">
+
+      <div class="mb-2 flex gap-4 justify-center">
+        <a href="https://github.com/jjbaah068/personalportfolio" target="_blank"
+          class="text-blue-600 hover:underline text-sm py-4">GitHub</a>
+        <a href="https://authentication-eight-tau.vercel.app/" target="_blank"
+          class="text-blue-600 hover:underline text-sm py-4">Vercel Link</a>
+      </div>
+
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">Authentication Project</h3>
+      <p class="text-gray-600 text-sm mb-2">A simple user authentication system built using HTML and JavaScript.</p>
+      <span class="bg-[#007B2F] px-2 py-1 rounded hover:text-white">HTML</span>
+      <span class="bg-green-500 px-2 py-1 rounded hover:text-white">JavaScript</span>
+    </div>
+
   </div>
 
 </section>
