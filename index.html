@@ -5,13 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./scripts/index.js" defer></script>
   <title>Personal Portfolio</title>
   <!-- <link rel="stylesheet" href="./style.css/index.css"> -->
 </head>
 
 <body class="bg-transparent text-gray-800 font-sans">
 
-  <nav class="bg-black w-full">
+  <nav id="navbar" class="fixed top-0 left-0 w-full z-50 p- transition-colors duration-300 w-full">
     <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
       <h4 class="text-gray-800 text-white text-xl font-bold">James J Baah</h4>
       <ul class="text-gray-700 text-white flex space-x-4 text-sm  font-semibold justify-center">
@@ -27,9 +28,9 @@
 
 
   <section id="home" class="h-screen bg-cover bg-center flex items-center justify-center"
-    style="background-image: url('./images/image1.jpg')">
-    <h1 class="text-white text-xl md:text-4xl text-center font-mono leading-snug">
-      I'm James J Baah <br />A Web Developer
+    style="background-image: url('./images/image15.jpg')">
+    <h1 class="text-white text-xl md:text-4xl text-center font-bold leading-snug">
+      I'm James Junior <br />A Front End Developer
     </h1>
   </section>
 
@@ -40,7 +41,7 @@
       <div class="flex-1">
         <h2 class="text-3xl font-bold mb-4">My Bio</h2>
         <p class="text-gray-600 mb-4">
-          I'm James J Baah, a passionate web developer with experience in HTML, CSS, JavaScript, and modern frameworks.
+          I'm James Junior Baah, a passionate web developer with experience in HTML, CSS, JavaScript, and modern frameworks.
         </p>
         <p class="text-gray-600 mb-6">
           I love building clean, interactive, and user-friendly websites. I'm always learning and pushing the
@@ -127,7 +128,7 @@
         </div>
 
         <div class="bg-gray-100 border-l-4 border-yellow-400 p-4 mb-4 rounded">
-          <h4 class="text-lg font-semibold">Junior Insurance Underwriter</h4>
+          <h4 class="text-lg font-semibold">Junior Insurance Underwriter/Analyst</h4>
           <p class="text-gray-700"><strong>Activa Int Insurance</strong>, Accra-Ghana</p>
           <span
             class="inline-block mt-2 text-sm font-bold text-orange-700 bg-yellow-100 px-3 py-1 rounded-full">FULLTIME</span>
@@ -135,8 +136,7 @@
         </div>
 
         <div class="mt-6 flex gap-4 flex-wrap">
-          <a href="#"
-            class="bg-green-300 text-white px-6 py-2 rounded-full font-semibold hover:bg-green-400 transition">Hire
+          <a href="mailto:jjbaah068@gmail.com" target="_blank" class="bg-green-300 text-white px-6 py-2 rounded-full font-semibold hover:bg-green-400 transition">Hire
             Me</a>
           <a href="#"
             class="bg-gray-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-gray-700 transition">Download
@@ -147,22 +147,43 @@
   </section>
 </body>
 
-<section id="projects" class="bg-gray-100 py-12 px-4 md:px-20 pt-[150px]">
-  <h2 class="text-3xl font-bold text-center mb-10 text-gray-800">Projects</h2>
-  <div>
+<section id="projects" class="bg-gray-100 py-12 px-4 pb-18 px-6 mt-20 text-center">
+  <h2 class="text-3xl font-bold mb-10">Projects</h2>
+  <div class="flex flex-wrap justify-center space-x-[60px]">
 
-    <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 p-6">
+    <div class="border rounded-lg p-6 w-80 h-80 shadow-md hover:shadow-lg">
 
       <img src="./images/image6.jpg" alt="Project Screenshot" class="rounded-xl mb-4">
 
+      <div class="mb-2 flex gap-4 justify-center">
+        <a href="https://github.com/jjbaah068/cisternsofhisglorym" target="_blank"
+          class="text-blue-600 hover:underline text-sm">GitHub</a>
+        <a href="https://mydemotestrun.vercel.app/" target="_blank"
+          class="text-blue-600 hover:underline text-sm">LiveDemo</a>
+      </div>
+
       <h3 class="text-xl font-semibold mb-2 text-gray-900">Cisterns of His Glory Project</h3>
       <p class="text-gray-600 text-sm mb-4"> A landing page built using only HTML and CSS for a charity foundation.</p>
-      <span class="bg-blue-500 px-2 py-1 rounded">HTML</span>
-      <span class="bg-green-500 px-2 py-1 rounded">CSS</span>
+      <span class="bg-[#007B2F] px-2 py-1 rounded hover:text-white">HTML</span>
+      <span class="bg-green-500 px-2 py-1 rounded hover:text-white">CSS</span>
     </div>
-    <div class="flex gap-4">
-      <a href="https://github.com/jjbaah068/cisternsofhisglorym" target="_blank" class="text-blue-600 hover:underline text-sm">GitHub</a>
-    <a href="https://mydemotestrun.vercel.app/" target="_blank" class="text-blue-600 hover:underline text-sm">LiveDemo</a>
+
+
+    <div class="border rounded-lg p-6 w-80 h-80 shadow-md hover:shadow-lg">
+
+      <img src="./images/image10.jpg" alt="Project Screenshot1" class="rounded-xl mb-4">
+
+      <div class="mb-2 flex gap-4 justify-center">
+        <a href="https://github.com/jjbaah068/landing_page" target="_blank"
+          class="text-blue-600 hover:underline text-sm">GitHub</a>
+        <a href="https://landing-page-olive-nine-77.vercel.app/" target="_blank"
+          class="text-blue-600 hover:underline text-sm">LiveDemo</a>
+      </div>
+
+      <h3 class="text-xl font-semibold mb-2 text-gray-900">Landing Page Project</h3>
+      <p class="text-gray-600 text-sm mb-4"> A landing page built using only HTML and CSS.</p>
+      <span class="bg-[#007B2F] px-2 py-1 rounded hover:text-white">HTML</span>
+      <span class="bg-green-500 px-2 py-1 rounded hover:text-white">CSS</span>
     </div>
   </div>
 
@@ -176,35 +197,45 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <label class="block text-gray-600 text-sm mb-1">First Name</label>
-          <input type="text" placeholder="First name" class="w-full border-b border-black outline-none focus:border-green-500 bg-transparent">
+          <input type="text" placeholder="First name"
+            class="w-full border-b border-black outline-none focus:border-green-500 bg-transparent">
         </div>
 
         <div>
           <label class="block text-gray-600 text-sm mb-1">Last Name</label>
-          <input type="text" placeholder="Last name" class="w-full border-b border-black outline-none focus:border-green-500 bg-transparent">
+          <input type="text" placeholder="Last name"
+            class="w-full border-b border-black outline-none focus:border-green-500 bg-transparent">
         </div>
 
         <div>
           <label class="block text-gray-600 text-sm mb-1">Email address</label>
-          <input type="email" placeholder="Email address" class="w-full border-b border-black outline-none focus:border-green-500 bg-transparent">
+          <input type="email" placeholder="Email address"
+            class="w-full border-b border-black outline-none focus:border-green-500 bg-transparent">
         </div>
 
         <div>
           <label class="block text-gray-600 text-sm mb-1">Message</label>
-          <textarea rows="4" placeholder="Message" class="w-full border-b border-black outline-none focus:border-green-500 bg-transparent resize-none"></textarea>
+          <textarea rows="4" placeholder="Message"
+            class="w-full border-b border-black outline-none focus:border-green-500 bg-transparent resize-none"></textarea>
         </div>
 
-        <button type="submit" class="bg-green-400 hover:bg-green-500 text-white font-semibold px-6 py-2 rounded-full text-sm uppercase">Send Message</button>
+        <button type="submit"
+          class="bg-green-400 hover:bg-green-500 text-white font-semibold px-6 py-2 rounded-full text-sm uppercase">Send
+          Message</button>
 
 
       </div>
     </form>
     <div>
       <h3 class="text-lg font-semibold text-gray-800">Contact Info</h3>
-      
+
       <div class="flex items-start gap-3 text-gray-800">
         <span>📍</span>
         <p>GB110 GBAWE SDA HOSPITAL ROAD, ACCRA</p>
+      </div>
+      <div class="flex items-start gap-3 text-gray-800">
+        <span>📞</span>
+        <p>+233 20 209 3760</p>
       </div>
       <div class="flex items-center gap-3 text-green-600">
         <span>📧</span>
@@ -212,10 +243,76 @@
       </div>
       <div class="flex items-center gap-3 text-green-600">
         <span>🌐</span>
-        <a href="" target="_blank" class="hover:underline">Add Vercel Link</a>
+        <a href="https://vercel.com/james-junior-baahs-projects" target="_blank" class="hover:underline">Vercel Link</a>
       </div>
     </div>
   </div>
 </section>
+
+<footer class="bg-gray-300 text-white py-8 mt-16">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <div>
+        <h3 class="text-lg font-semibold text-gray-800">Contact</h3>
+
+        <div class="flex items-start gap-3 text-gray-800">
+          <span>📍</span>
+          <p>GB110 GBAWE SDA HOSPITAL ROAD, ACCRA</p>
+        </div>
+        <div class="flex items-start gap-3 text-gray-800">
+          <span>📞</span>
+          <p>+233 20 209 3760</p>
+        </div>
+        <div class="flex items-center gap-3 text-green-600">
+          <span>📧</span>
+          <p>jjbaah068@gmail.com</p>
+        </div>
+        <div class="flex items-center gap-3 text-green-600">
+          <span>🌐</span>
+          <a href="https://vercel.com/james-junior-baahs-projects" target="_blank" class="hover:underline">Vercel Link</a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="text-black font-semibold mb-3">Quick Links</h3>
+        <ul class="space-y-2 text-sm text-black">
+          <li><a href="#home" class="hover:underline">Home</a></li>
+          <li><a href="#about" class="hover:underline">About</a></li>
+          <li><a href="#services" class="hover:underline">Services</a></li>
+          <li><a href="#resume" class="hover:underline">Resume</a></li>
+          <li><a href="#projects" class="hover:underline">Projects</a></li>
+          <li><a href="#contact" class="hover:underline">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="min-w-[250px] ml-auto">
+        <h3 class="text-black text-lg font-semibold ">Connect</h3>
+        <div class="flex items-center space-x-px">
+          <a href="https://www.linkedin.com/in/james-kojo-junior-baah-881361336/" target="_blank" class="inline-block">
+            <img src="./images/image8.png" alt="linkedin photo" class="w-[50px] h-[50px] hover:scale-110"></a>
+
+          <a href="#" class="inline-block">
+            <img src="./images/image9.png" alt="facebook photo" class="w-[50px] h-[50px] hover:scale-110">
+          </a>
+
+          <a href="#" class="inline-block">
+            <img src="./images/image11.png" alt="instagram photo" class="w-[50px] h-[50px] hover:scale-110">
+          </a>
+
+        </div>
+
+
+
+
+      </div>
+
+    </div>
+
+    <div class="mt-[80px] text-center text-xs text-black">
+      &copy; 2025 James Junior Baah. All rights reserved.
+    </div>
+  </div>
+</footer>
 
 </html>
